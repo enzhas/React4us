@@ -6,6 +6,8 @@ import Section1 from './components/Section1';
 import Section2 from './components/Section2';
 import Footer from './components/Footer';
 
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 function App() {
   return (
     <div>
