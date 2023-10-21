@@ -5,7 +5,7 @@ function Category() {
   const { categoryName } = useParams();
   return (
     <div>
-      <h1>{categoryName} Category</h1>
+      <h1>{categoryName}</h1>
       {/* Add category-specific content here */}
     </div>
   );

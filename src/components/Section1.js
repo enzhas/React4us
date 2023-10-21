@@ -17,6 +17,8 @@ import electronics from './images/electronics.jpg';
 import findYourDeal from './images/find your deal.jpg';
 import easyReturn from './images/easy return.jpg';
 
+import { Outlet, Route, BrowserRouter, Link, Routes } from 'react-router-dom';
+
 import sc1 from './images/sc1.jpg';
 import sc2 from './images/sc2.jpg';
 import sc3 from './images/sc3.jpg';
@@ -52,7 +54,7 @@ function Section1() {
                   <span>Chairs</span>
                 </div>
               </div>
-              <a href="/category/gaming">See More</a>
+              <Link to="category/gaming">See More</Link>
             </div>
             <div className="box">
               <h3>Shop By Category</h3>
@@ -74,14 +76,14 @@ function Section1() {
                   <span>Toy & Games</span>
                 </div>
               </div>
-              <a href="#">Shop Now</a>
+              <Link to="category/categories">See More</Link>
             </div>
             <div className="box box-c">
               <h3>Amazon Basics</h3>
               <div>
                 <img src={amazonBasics} alt="Amazon Basics" />
               </div>
-              <a href="#">See More</a>
+              <Link to="category/amazon-basics">See More</Link>
             </div>
             <div className="box-b">
               <div className="best">
@@ -99,28 +101,28 @@ function Section1() {
               <div>
                 <img src={shopValentines} alt="Shop Valentine's Day" />
               </div>
-              <a href="#">See More</a>
+              <Link to="category/valentine-day">See More</Link>
             </div>
             <div className="box box-c">
               <h3>Electronics</h3>
               <div>
                 <img src={electronics} alt="Electronics" />
               </div>
-              <a href="#">See More</a>
+              <Link to="category/electronics">See More</Link>
             </div>
             <div className="box box-c">
               <h3>Find your ideal TV</h3>
               <div>
                 <img src={findYourDeal} alt="Find your ideal TV" />
               </div>
-              <a href="#">See More</a>
+              <Link to="category/tv">See More</Link>
             </div>
             <div className="box box-c">
               <h3>Easy Returns</h3>
               <div>
                 <img src={easyReturn} alt="Easy Returns" />
               </div>
-              <a href="#">See More</a>
+              <Link to="category/easy-returns">See More</Link>
             </div>
           </div>
         </div>
