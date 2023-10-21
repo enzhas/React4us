@@ -52,7 +52,7 @@ function Section1() {
                   <span>Chairs</span>
                 </div>
               </div>
-              <a href="#">See More</a>
+              <a href="/category/gaming">See More</a>
             </div>
             <div className="box">
               <h3>Shop By Category</h3>

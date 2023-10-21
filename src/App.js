@@ -5,18 +5,26 @@ import Sidebar from './components/Sidebar';
 import Section1 from './components/Section1';
 import Section2 from './components/Section2';
 import Footer from './components/Footer';
+import Category from './components/Category';
 
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
+import { Outlet, Route, BrowserRouter, Link, Routes } from 'react-router-dom';
 function App() {
   return (
-    <div>
-      <Header />
-      <Sidebar />
-      <Section1 />
-      <Section2 />
-      <Footer />
-    </div>
+      <div>
+        <Header />
+        <Sidebar />
+        <BrowserRouter>
+        <nav>
+          <Link to="category/gaming">Game</Link>
+        </nav>
+        <Routes>
+          <Route path="category/:categoryName" element={<Category />} />
+        </Routes>
+        </BrowserRouter>
+        <Section1 />
+        <Section2 />
+        <Footer />
+      </div>
   );
 }
 
