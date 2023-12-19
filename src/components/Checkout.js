@@ -18,7 +18,7 @@ function Checkout() {
     <div className="checkout">
       <div className="checkout__left">
         <a
-          href="http://www.linkedin.com/in/charles-k-okoye/"
+          href="https://t.me/ttohem"
           target="_blank"
           rel="noopener noreferrer"
         >

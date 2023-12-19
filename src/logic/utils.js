@@ -8,6 +8,7 @@ export const getPrice = (price, type = "main") => {
   }
 };
 
+
 export const renderRating = (num) => {
   let rawRating = num;
   if (!rawRating) rawRating = 1;

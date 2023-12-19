@@ -27,9 +27,6 @@ function CheckoutProduct({ cartId, image, title, price, rating }) {
         <div className="checkout__productGift">
           <input type="checkbox" name="gift" />
           <span>This is a gift</span>
-          <a href="https://github.com/OkoyeCharles" target="_blank" rel="noreferrer">
-            Learn More
-          </a>
         </div>
 
         <div className="checkout__productRating">
